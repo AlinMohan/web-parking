@@ -1,0 +1,59 @@
+{% extends 'base.html' %} 
+{% block content %} 
+{% load static %}
+
+<style>
+  h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: cadetblue;
+  }
+</style>
+
+<h1>About Page</h1>
+<br /><br />
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" style="width: 22rem">
+        <img
+          src="{% static 'images/parkingcar.jpg' %}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">Online Parking System</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 22rem">
+        <img
+          src="{% static 'images/parkingcar.jpg' %}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">Cancel At Any Time</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 22rem">
+        <img
+          src="{% static 'images/parkingcar.jpg' %}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">Low Cost Compared to other Parking Systems</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  {% endblock %}
+
