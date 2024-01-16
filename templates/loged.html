@@ -1,0 +1,38 @@
+{% extends 'base2.html' %}
+
+{% block content %}
+
+<!-- your_template.html -->
+<script>
+    // Check if the URL contains a logout message parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const logoutMessage = urlParams.get('logout_message');
+
+    // If the logout message parameter is present, show a pop-up
+    if (logoutMessage) {
+        alert(logoutMessage);
+    }
+</script>
+<style>
+    h1{
+        /* text-align: center; */
+        color: cadetblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+</style>
+<body style="background-color: lightblue;">
+    
+
+<div class="container">
+<h1>Welcome, {{key}}</h1><br><br>
+<h2>Name: {{key2}}</h2><br><br>
+<h2>Email: {{key4}}</h2><br><br>
+<h2>Phone: {{key5}}</h2><br><br>
+<h2>VehicleNumber: {{key6}}</h2>
+</div>
+</body>
+
+{% endblock %}
+
+
+
